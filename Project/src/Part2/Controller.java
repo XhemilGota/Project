@@ -39,7 +39,7 @@ public class Controller implements ActionListener{
 		else if(event.getSource() == writer.getRegisterButton())
 		{			
 			
-			if((writer.getUsernameTextfield().getText().equals("")) && (writer.getPasswordTextfield().getText().equals("")))
+			if((writer.getUsernameTextfield().getText().equals("")) || (writer.getPasswordTextfield().getText().equals("")))
 			{
 				JOptionPane.showMessageDialog(null, "Username or Password field should not be left blank!");
 			}
